@@ -59,9 +59,9 @@ function newTodo() {
       listItem.setAttribute("id", "removethis")
       var item = document.getElementById("removethis");
       item.parentNode.removeChild(item); 
-      itemCountSpan.innerText = Number(itemCountSpan.innerText - 1)
+      itemCountSpan.innerText = Number(itemCountSpan.innerText) - 1
       if(!checkbox.checked){
-      uncheckedCountSpan.innerText = Number(uncheckedCountSpan.innerText - 1)
+      uncheckedCountSpan.innerText = Number(uncheckedCountSpan.innerText) - 1
       }
     }
 
